@@ -1,4 +1,4 @@
-# obany.github.io
-Published web site for obany.com
+# iotaeco.github.io
+Published web site for iota.eco
 
-See [github.com/obany/web](https://github.com/obany/web) for the source.
+See [github.com/iotaeco/web](https://github.com/iotaeco/web) for the source.
