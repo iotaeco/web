@@ -1,0 +1,14 @@
+<template>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row brand-navbar">
+        <a class="navbar-brand mr-0 mr-md-2" route-href="route: projects" href="#">
+            <img class="brand-icon" src="./assets/brand/logo-tile.svg" alt="Obany">
+        </a>
+        <div class="navbar-nav-scroll">
+            <ul class="navbar-nav bd-navbar-nav flex-row">
+                <li repeat.for="row of router.navigation" class="nav-item ${row.isActive ? 'active' : ''}">
+                    <a class="nav-link" href.bind="row.href">${row.title}</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</template>

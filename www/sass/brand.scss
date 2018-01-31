@@ -1,0 +1,13 @@
+.brand-bright-text {
+    color: lighten($brand-color, 10%);
+}
+
+.brand-stripe-1 {
+    border-top: lighten($brand-color, 20%) 1px solid;
+    background-color: $gray-100;
+}
+
+.brand-stripe-2 {
+    border-top: lighten($brand-color, 20%) 1px solid;
+    background-color: $gray-200;
+}

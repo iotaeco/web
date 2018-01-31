@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>attachToTangle Example</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/examples.css">
+</head>
+
+<body class="p-5">
+    <h1>attachToTangle Example</h1>
+    <form>
+        <div class="form-group">
+            <label for="trunkTransaction">Trunk Transaction</label>
+            <input type="text" class="form-control" id="trunkTransaction" placeholder="hash">
+        </div>
+        <div class="form-group">
+            <label for="branchTransaction">Branch Transaction</label>
+            <input type="text" class="form-control" id="branchTransaction" placeholder="hash">
+        </div>
+        <div class="form-group">
+            <label for="minWeightMagnitude">Min Weight Magnitude</label>
+            <input type="text" class="form-control" id="minWeightMagnitude" placeholder="Minimum 18">
+        </div>
+        <div class="form-group">
+            <label for="trytes">Trytes</label>
+            <input type="text" class="form-control" id="trytes" placeholder="comma separated trytes">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div>This operation can take a long time, you can interrupt it by using the interruptAttachingToTangle API.</div>
+    </form>
+    <br/>
+    <div id="console" class="mt-4"></div>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+    <script src="../../config.js"></script>
+    <script>
+        System.import("attachToTangleExample.js")
+            .then(function (module) {
+                var frm = document.getElementsByTagName("form");
+                frm[0].onsubmit = function () {
+                    consoleClear();
+                    module.attachToTangleExample(document.getElementById("trunkTransaction").value,
+                        document.getElementById("branchTransaction").value,
+                        elementToNumber("minWeightMagnitude"),
+                        elementToArray("trytes"));
+                    return false;
+                };
+            });
+    </script>
+</body>

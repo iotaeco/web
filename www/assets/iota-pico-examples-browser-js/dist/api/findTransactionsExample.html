@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>findTransactions Example</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/examples.css">
+</head>
+
+<body class="p-5">
+    <h1>findTransactions Example</h1>
+    <form>
+        <div class="form-group">
+            <label for="bundles">Bundles</label>
+            <input type="text" class="form-control" id="bundles" placeholder="comma separated bundle hashes">
+        </div>
+        <div class="form-group">
+            <label for="addresses">Addresses</label>
+            <input type="text" class="form-control" id="addresses" placeholder="comma separated address hashes">
+        </div>
+        <div class="form-group">
+            <label for="tags">Tags</label>
+            <input type="text" class="form-control" id="tags" placeholder="comma separated transaction tags">
+        </div>
+        <div class="form-group">
+            <label for="approvees">Approvees</label>
+            <input type="text" class="form-control" id="approvees" placeholder="comma separated transaction approvee hashes">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br/>
+    <div id="console" class="mt-4"></div>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+    <script src="../../config.js"></script>
+    <script>
+        System.import("findTransactionsExample.js")
+            .then(function (module) {
+                var frm = document.getElementsByTagName("form");
+                frm[0].onsubmit = function () {
+                    consoleClear();
+                    module.findTransactionsExample(elementToArray("bundles"),
+                        elementToArray("addresses"),
+                        elementToArray("tags"),
+                        elementToArray("approvees"));
+                    return false;
+                };
+            });
+    </script>
+</body>

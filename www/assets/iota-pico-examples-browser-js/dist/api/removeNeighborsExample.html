@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>removeNeighbors Example</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/examples.css">
+</head>
+
+<body class="p-5">
+    <h1>removeNeighbors Example</h1>
+    <br/>
+    <form>
+        <div class="form-group">
+            <label for="neighbors">Neighbors</label>
+            <input type="text" class="form-control" id="neighbors" placeholder="e.g. udp://1.2.3.4:14600,udp://5.6.7.8:14600">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="console" class="mt-4"></div>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+    <script src="../../config.js"></script>
+    <script>
+        System.import("removeNeighborsExample.js")
+            .then(function (module) {
+                var frm = document.getElementsByTagName("form");
+                frm[0].onsubmit = function() {
+                    consoleClear();
+                    module.removeNeighborsExample(elementToArray("neighbors"));
+                    return false;
+                };
+            });
+    </script>
+</body>

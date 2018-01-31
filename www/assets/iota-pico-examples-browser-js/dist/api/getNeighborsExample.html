@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>getNeighbors Example</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/examples.css">
+</head>
+
+<body class="p-5">
+    <h1>getNeighbors Example</h1>
+    <br/>
+    <div id="console" class="mt-4"></div>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+    <script src="../../config.js"></script>
+    <script>
+        System.import("getNeighborsExample.js")
+            .then(function (module) {
+                module.getNeighborsExample();
+            });
+    </script>
+</body>

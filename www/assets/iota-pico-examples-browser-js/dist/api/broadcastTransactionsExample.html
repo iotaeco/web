@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>broadcastTransactions Example</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/examples.css">
+</head>
+
+<body class="p-5">
+    <h1>broadcastTransactions Example</h1>
+    <form>
+        <div class="form-group">
+            <label for="trytes">Trytes</label>
+            <input type="text" class="form-control" id="trytes" placeholder="comma separated trytes">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br/>
+    <div id="console" class="mt-4"></div>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+    <script src="../../config.js"></script>
+    <script>
+        System.import("broadcastTransactionsExample.js")
+            .then(function (module) {
+                var frm = document.getElementsByTagName("form");
+                frm[0].onsubmit = function () {
+                    consoleClear();
+                    module.broadcastTransactionsExample(elementToArray("trytes"));
+                    return false;
+                };
+            });
+    </script>
+</body>

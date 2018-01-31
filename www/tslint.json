@@ -1,0 +1,28 @@
+{
+	"extends": "tslint:recommended",
+	"rulesDirectory": [],
+	"rules": {
+		"object-literal-sort-keys": false,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": {
+					"objects": "never"
+				}
+			}
+		],
+		"no-reference": false,
+		"array-type": false,
+		"interface-name": false,
+		"no-empty": {
+			"severity": "warning"
+		},
+		"no-empty-interface": {
+			"severity": "warning"
+		},
+		"variable-name": [
+			true,
+			"allow-leading-underscore"
+		]
+	}
+}
