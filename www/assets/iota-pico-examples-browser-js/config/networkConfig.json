@@ -1,5 +1,5 @@
 {
     "protocol": "http",
-    "host": "n1.iota.eco",
+    "host": "iotanode.host",
     "port": 14265
 }
