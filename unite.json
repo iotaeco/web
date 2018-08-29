@@ -13,7 +13,7 @@
 	"cssPre": "Sass",
 	"cssPost": "PostCss",
 	"cssLinter": "StyleLint",
-	"packageManager": "Yarn",
+	"packageManager": "Npm",
 	"taskManager": "Gulp",
 	"server": "BrowserSync",
 	"ide": "VSCode",
@@ -24,10 +24,9 @@
 			"name": "systemjs",
 			"main": "dist/system.src.js",
 			"mainMinified": "dist/system.js",
-			"includeMode": "both",
 			"scriptIncludeMode": "both",
 			"isModuleLoader": true,
-			"version": "^0.20.19"
+			"version": "^0.21.3"
 		},
 		"bootstrap": {
 			"name": "bootstrap",
@@ -52,204 +51,175 @@
 		"aurelia-animator-css": {
 			"name": "aurelia-animator-css",
 			"main": "dist/system/aurelia-animator-css.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.0.4"
 		},
 		"aurelia-binding": {
 			"name": "aurelia-binding",
 			"main": "dist/system/aurelia-binding.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.5.0"
+			"version": "^2.0.0"
 		},
 		"aurelia-bootstrapper": {
 			"name": "aurelia-bootstrapper",
 			"main": "dist/system/aurelia-bootstrapper.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^2.1.1"
 		},
 		"aurelia-dependency-injection": {
 			"name": "aurelia-dependency-injection",
 			"main": "dist/system/aurelia-dependency-injection.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.3.2"
 		},
 		"aurelia-event-aggregator": {
 			"name": "aurelia-event-aggregator",
 			"main": "dist/system/aurelia-event-aggregator.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.0.1"
 		},
 		"aurelia-fetch-client": {
 			"name": "aurelia-fetch-client",
 			"main": "dist/system/aurelia-fetch-client.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.1.3"
 		},
 		"aurelia-http-client": {
 			"name": "aurelia-http-client",
 			"main": "dist/system/aurelia-http-client.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.2.1"
 		},
 		"aurelia-framework": {
 			"name": "aurelia-framework",
 			"main": "dist/system/aurelia-framework.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.1.5"
+			"version": "^1.2.0"
 		},
 		"aurelia-history": {
 			"name": "aurelia-history",
 			"main": "dist/system/aurelia-history.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.1.0"
 		},
 		"aurelia-history-browser": {
 			"name": "aurelia-history-browser",
 			"main": "dist/system/aurelia-history-browser.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.1.0"
+			"version": "^1.1.1"
 		},
 		"aurelia-loader": {
 			"name": "aurelia-loader",
 			"main": "dist/system/aurelia-loader.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.0.0"
 		},
 		"aurelia-loader-default": {
 			"name": "aurelia-loader-default",
 			"main": "dist/system/aurelia-loader-default.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.0.3"
+			"version": "^1.0.4"
 		},
 		"aurelia-logging": {
 			"name": "aurelia-logging",
 			"main": "dist/system/aurelia-logging.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.3.1"
 		},
 		"aurelia-logging-console": {
 			"name": "aurelia-logging-console",
 			"main": "dist/system/aurelia-logging-console.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.0.0"
 		},
 		"aurelia-metadata": {
 			"name": "aurelia-metadata",
 			"main": "dist/system/aurelia-metadata.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.0.3"
 		},
 		"aurelia-pal": {
 			"name": "aurelia-pal",
 			"main": "dist/system/aurelia-pal.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.4.0"
+			"version": "^1.8.0"
 		},
 		"aurelia-pal-browser": {
 			"name": "aurelia-pal-browser",
 			"main": "dist/system/aurelia-pal-browser.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.3.0"
+			"version": "^1.8.0"
 		},
 		"aurelia-path": {
 			"name": "aurelia-path",
 			"main": "dist/system/aurelia-path.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.1.1"
 		},
 		"aurelia-polyfills": {
 			"name": "aurelia-polyfills",
 			"main": "dist/system/aurelia-polyfills.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.2.2"
 		},
 		"aurelia-route-recognizer": {
 			"name": "aurelia-route-recognizer",
 			"main": "dist/system/aurelia-route-recognizer.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.1.1"
 		},
 		"aurelia-router": {
 			"name": "aurelia-router",
 			"main": "dist/system/aurelia-router.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.4.0"
 		},
 		"aurelia-task-queue": {
 			"name": "aurelia-task-queue",
 			"main": "dist/system/aurelia-task-queue.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.2.1"
+			"version": "^1.3.0"
 		},
 		"aurelia-templating": {
 			"name": "aurelia-templating",
 			"main": "dist/system/aurelia-templating.js",
-			"includeMode": "both",
 			"isPackage": false,
 			"version": "^1.6.0"
 		},
 		"aurelia-templating-binding": {
 			"name": "aurelia-templating-binding",
 			"main": "dist/system/aurelia-templating-binding.js",
-			"includeMode": "both",
 			"isPackage": false,
-			"version": "^1.4.0"
+			"version": "^1.4.1"
 		},
 		"aurelia-dialog": {
 			"name": "aurelia-dialog",
 			"main": "dist/system/aurelia-dialog.js",
-			"includeMode": "both",
 			"isPackage": true,
 			"version": "^1.0.0-rc.1.0.3"
 		},
 		"aurelia-templating-resources": {
 			"name": "aurelia-templating-resources",
 			"main": "dist/system/aurelia-templating-resources.js",
-			"includeMode": "both",
 			"isPackage": true,
-			"version": "^1.5.4"
+			"version": "^1.6.0"
 		},
 		"aurelia-templating-router": {
 			"name": "aurelia-templating-router",
 			"main": "dist/system/aurelia-templating-router.js",
-			"includeMode": "both",
 			"isPackage": true,
 			"version": "^1.2.0"
 		},
 		"aurelia-validation": {
 			"name": "aurelia-validation",
 			"main": "dist/system/aurelia-validation.js",
-			"includeMode": "both",
 			"isPackage": true,
-			"version": "^1.1.2"
+			"version": "^1.1.3"
 		},
 		"whatwg-fetch": {
 			"name": "whatwg-fetch",
 			"main": "fetch.js",
-			"includeMode": "both",
-			"version": "^2.0.3"
+			"version": "^2.0.4"
 		},
 		"moment": {
 			"name": "moment",
@@ -263,7 +233,6 @@
 		"systemjs-plugin-text": {
 			"name": "systemjs-plugin-text",
 			"main": "text.js",
-			"includeMode": "both",
 			"map": {
 				"text": "systemjs-plugin-text"
 			},
@@ -320,6 +289,6 @@
 			"configuration": "./configuration/"
 		}
 	},
-	"uniteVersion": "1.7.8",
+	"uniteVersion": "1.7.12",
 	"documenter": "None"
 }
